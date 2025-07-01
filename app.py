@@ -11,7 +11,7 @@ file = st.file_uploader('이미지를 업로드해주세요', type=['jpg', 'png'
 np.set_printoptions(suppress=True)
 
 # Load the model
-model = load_model("keras_Model.h5", compile=False)
+model = load_model("keras_model.h5", compile=False)
 
 # Load the labels
 class_names = open("labels.txt", "r", encoding='UTF-8').readlines()
